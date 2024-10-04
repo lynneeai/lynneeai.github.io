@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-Invited talk at [Multimodal Content Moderation Workshop CVPR '24](https://multimodal-content-moderation.github.io/).
+Invited talk at [Multimodal Content Moderation Workshop CVPR'24](https://multimodal-content-moderation.github.io/).
