@@ -60,6 +60,7 @@
 
       {%- for author in entry.author_array limit: author_array_limit -%}
         {% assign author_is_self = false %}
+        {%- assign author_first_name = author.first | regex_replace: '[*∗†‡§¶‖&^]', '' -%}
         {%- assign author_last_name = author.last | regex_replace: '[*∗†‡§¶‖&^]', '' -%}
         {%- assign author_last_html = author.last | regex_replace: '([*∗†‡§¶‖&^]+)', '<sup>\1</sup>' -%}
         {% if site.scholar.last_name contains author_last_name %}
@@ -86,13 +87,13 @@
           <span style="color: #38a3a5; text-decoration: underline; font-weight: bold;">
             {{- author.first }} {{ author_last_html -}}
           </span>
-          {%- if co_first_authors contains author_last_name -%}
+          {%- if co_first_authors contains author_last_name and co_first_authors contains author_first_name -%}
             <span style="color: #38a3a5; font-weight: bold;">
               <sup>*</sup>
             </span>            
           {% endif %}
         {%- else -%}
-          {%- if co_first_authors contains author_last_name -%}
+          {%- if co_first_authors contains author_last_name and co_first_authors contains author_first_name -%}
             {%- if coauthor_url -%}
               <a href="{{ coauthor_url }}">
                 {{- author.first }} {{ author_last_html -}}<sup>*</sup>
