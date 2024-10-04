@@ -206,20 +206,21 @@
     },
     {
       "language": "Manadarin",
-      "fluency": "Native",
+      "fluency": "Native Speaker",
       "icon": ""
     },
     {
       "language": "Japanese",
-      "fluency": "Elementary",
-      "icon": ""
+      "fluency": "Elementary Proficiency",
+      "icon": "",
+      "pdf": "Japanese_certificate_Lin.pdf"
     }
   ],
   "interests": [
     {
       "name": "Bartending and Mixology",
       "icon": "",
-      "url": "https://drive.google.com/file/d/1nCu21YXJnnl1T8sX8bQLLjYRGc2fU0GN/view?pli=1"
+      "pdf": "CBA_certificate_Lin.pdf"
     }
   ]
 }
