@@ -53,7 +53,7 @@ layout: default
     <!-- News -->
     {% if page.news and site.announcements.enabled %}
       <h2>
-        <a href="{{ '/news/' | relative_url }}" style="color: inherit">News</a>
+        <span style="color: inherit">News</span>
       </h2>
       {% include news.liquid limit=true %}
     {% endif %}
@@ -73,6 +73,14 @@ layout: default
         <a href="{{ '/publications/' | relative_url }}" style="color: inherit">Selected Publications</a>
       </h2>
       {% include selected_papers.liquid %}
+
+      <!-- "See More" Textbox -->
+      <div style="text-align: center; margin-top: 20px">
+         <a href="{{ '/publications/' | relative_url }}" style="color: inherit font-weight: bold;">
+          See More
+        </a>
+      </div>
+    </div>
     {% endif %}
 
     
