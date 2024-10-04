@@ -78,14 +78,25 @@ layout: default
           {% if data[0] == 'meta' or data[1].size == 0 %} {% continue %} {% endif %}
           <a class="anchor" id="{{ data[0] }}"></a>
           <div class="card mt-3 p-3">
-            <h3 class="card-title font-weight-medium">{{ data[0] | capitalize }}</h3>
+            <h3 class="card-title font-weight-medium">
+              {% assign words = data[0] | split: " " %}
+              {% for word in words %}
+                {{ word | capitalize }}{% unless forloop.last %} {% endunless %}
+              {% endfor %}
+            </h3>
             <div>
               {% case data[0] %}
                 {% when 'basics' %}
                   {% include resume/basics.liquid %}
                 {% when 'education' %}
                   {% include resume/education.liquid %}
-                {% when 'work' %}
+                {% when 'professional experience' %}
+                  {% include resume/work.liquid %}
+                {% when 'research experience' %}
+                  {% include resume/work.liquid %}
+                {% when 'entrepreneurial experience' %}
+                  {% include resume/work.liquid %}
+                {% when 'teaching' %}
                   {% include resume/work.liquid %}
                 {% when 'volunteer' %}
                   {% include resume/volunteer.liquid %}

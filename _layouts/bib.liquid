@@ -51,6 +51,7 @@
     <!-- Author -->
     <div class="author">
       {% assign author_array_size = entry.author_array | size %}
+      {% assign co_first_authors = entry.co_first_authors %} <!-- Grabbing co_first_authors from the entry data -->
 
       {% assign author_array_limit = author_array_size %}
       {% if site.max_author_limit and author_array_size > site.max_author_limit %}
@@ -82,19 +83,32 @@
           {%- if forloop.last and author_array_limit == author_array_size %}and&nbsp;{% endif -%}
         {% endif %}
         {%- if author_is_self -%}
-          <em>
-            {{- author.first }}
-            {{ author_last_html -}}
-          </em>
+          <span style="color: #38a3a5; text-decoration: underline; font-weight: bold;">
+            {{- author.first }} {{ author_last_html -}}
+          </span>
+          {%- if co_first_authors contains author_last_name -%}
+            <span style="color: #38a3a5; font-weight: bold;">
+              <sup>*</sup>
+            </span>            
+          {% endif %}
         {%- else -%}
-          {%- if coauthor_url -%}
-            <a href="{{ coauthor_url }}">
+          {%- if co_first_authors contains author_last_name -%}
+            {%- if coauthor_url -%}
+              <a href="{{ coauthor_url }}">
+                {{- author.first }} {{ author_last_html -}}<sup>*</sup>
+              </a>
+            {%- else -%}
+              {{- author.first }} {{ author_last_html }}<sup>*</sup>
+            {% endif %}
+          {%- else -%}
+            {%- if coauthor_url -%}
+              <a href="{{ coauthor_url }}">
+                {{- author.first }} {{ author_last_html -}}
+              </a>
+            {%- else -%}
               {{- author.first }}
               {{ author_last_html -}}
-            </a>
-          {%- else -%}
-            {{- author.first }}
-            {{ author_last_html -}}
+            {% endif %}
           {% endif %}
         {%- endif -%}
       {% endfor %}
