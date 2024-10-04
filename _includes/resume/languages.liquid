@@ -16,7 +16,17 @@
             {% for item in content.items %}
               {% assign i = i | plus: 1 %}
             {% endfor %}
-            <td colspan="{{ i }}" class="list-group-category">{{ content.language }}</td>
+            <td colspan="{{ i }}" class="list-group-category">
+              {% if content.pdf %}
+                <a 
+                  href="{{ content.pdf | prepend: 'assets/pdf/' | relative_url}}" 
+                  target="_blank">
+                  {{ content.language }}
+                </a>
+              {% else %}
+                {{ content.language }}
+              {% endif %}
+            </td>
           </tr>
           <tr>
             <td></td>
