@@ -7,3 +7,31 @@
 
 "Vision":
   color: "#009f36"
+
+"EMNLP 2024":
+  url: https://2024.emnlp.org/
+  color: "#be0d3c"
+
+"ICWSM 2024":
+  url: https://www.icwsm.org/2024/
+  color: "#5bc5cf"
+
+"ICWSM 2023":
+  url: https://www.icwsm.org/2023/
+  color: "#5bc5cf"
+
+"ICWSM 2021":
+  url: https://www.icwsm.org/2021/
+  color: "#5bc5cf"
+
+"IC<sup>2</sup>S<sup>2</sup> 2023":
+  url: https://ic2s2-2023.org/
+  color: "#8193be"
+
+"IEEE BigData 2021":
+  url: https://bigdataieee.org/BigData2021/
+  color: "#1d1c63"
+
+"IEEE MIPR 2019":
+  url: https://www.computer.org/csdl/proceedings/mipr/2019/19wB16JGcSY
+  color: "#faa41b"
