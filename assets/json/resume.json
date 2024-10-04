@@ -161,21 +161,24 @@
       "summary": "Columbia University, Fall 2024",
       "position": "Enhanced Teaching Assistant",
       "startDate": "2024-09-01",
-      "endDate": "2024-12-31"
+      "endDate": "2024-12-31",
+      "url": "https://www.cs.columbia.edu/~julia/courses/CS6998-24/syllabus24b.html"
     },
     {
       "name": "Advanced Topics in Spoken Language Processing",
       "summary": "Columbia University, Fall 2022",
       "position": "Enhanced Teaching Assistant",
       "startDate": "2022-09-01",
-      "endDate": "2022-12-31"
+      "endDate": "2022-12-31",
+      "url": "https://www.cs.columbia.edu/~julia/courses/CS6998-22/syllabus22b.html"
     },
     {
       "name": "Advanced Topics in Spoken Language Processing",
       "summary": "Columbia University, Spring 2022",
       "position": "Enhanced Teaching Assistant",
       "startDate": "2022-01-01",
-      "endDate": "2022-05-01"
+      "endDate": "2022-05-01",
+      "url": "https://www.cs.columbia.edu/~julia/courses/CS6998-22/syllabus22.html"
     },
     {
       "name": "Introduction to Database",

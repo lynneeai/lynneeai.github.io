@@ -21,7 +21,7 @@
                 <a 
                   href="{{ content.pdf | prepend: 'assets/pdf/' | relative_url}}" 
                   target="_blank">
-                  {{ content.name }}
+                  <u>{{ content.name }}</u>
                 </a>
               {% else %}
                 {{ content.name }}
