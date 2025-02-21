@@ -1,12 +1,10 @@
-"AJP":
-  url: https://aapt.scitation.org/journal/ajp
-  color: "#00369f"
+"NAACL 2025":
+  url: https://2025.naacl.org/
+  color: "#ddc035"
 
-"PhysRev":
-  url: https://journals.aps.org/
-
-"Vision":
-  color: "#009f36"
+"COLING 2025":
+  url: https://coling2025.org/
+  color: "#00435c"
 
 "EMNLP 2024":
   url: https://2024.emnlp.org/

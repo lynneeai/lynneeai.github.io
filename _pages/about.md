@@ -11,6 +11,7 @@ profile:
   more_info: >
     <p>Ph.D. Candidate</p>
     <p><a href="https://www.cs.columbia.edu/">Columbia University</a></p>
+    <p><a href="mailto:lin.ai@cs.columbia.edu">lin.ai@cs.columbia.edu</a></p>
 
 selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page

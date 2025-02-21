@@ -53,37 +53,25 @@ layout: default
     <!-- News -->
     {% if page.announcements and page.announcements.enabled %}
       <h2>
-        <span style="color: inherit">News</span>
+        <a href="{{ '/news/' | relative_url }}" style="color: inherit">news</a>
       </h2>
       {% include news.liquid limit=true %}
     {% endif %}
 
-    <!-- Latest posts -->
-    {% if page.latest_posts and page.latest_posts.enabled %}
-      <h2>
-        <a href="{{ '/blog/' | relative_url }}" style="color: inherit">Latest Posts</a>
-      </h2>
-      {% include latest_posts.liquid %}
-    {% endif %}
-
     <!-- Selected papers -->
     {% if page.selected_papers %}
-      <div style="margin-top: 80px" class="section-header section-header--small">
       <h2>
-        <a href="{{ '/publications/' | relative_url }}" style="color: inherit">Selected Publications</a>
+        <a href="{{ '/publications/' | relative_url }}" style="color: inherit">selected publications</a>
       </h2>
       {% include selected_papers.liquid %}
-
-      <!-- "See More" Textbox -->
-      <div style="text-align: center; margin-top: 20px">
-         <a href="{{ '/publications/' | relative_url }}" style="color: inherit font-weight: bold;">
-          See More
-        </a>
-      </div>
-    </div>
     {% endif %}
 
-    
+    <!-- "See More" Textbox -->
+    <div style="text-align: center; margin-top: 20px">
+        <a href="{{ '/publications/' | relative_url }}" style="color: inherit font-weight: bold;">
+        See More
+      </a>
+    </div>
 
     {% if site.newsletter and site.newsletter.enabled and site.footer_fixed %}
       {% include newsletter.liquid center=true %}

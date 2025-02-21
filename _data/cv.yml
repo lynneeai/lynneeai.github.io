@@ -1,97 +1,373 @@
 - title: General Information
   type: map
   contents:
-    - name: Full Name
-      value: Albert Einstein
-    - name: Date of Birth
-      value: 14th March 1879
-    - name: Languages
-      value: English, German
+    - name: Name
+      value: "Lin Ai"
+    - name: Affiliation
+      value: "Columbia University in the City of New York"
+    - name: Position
+      value: "Ph.D. Candidate"
+    - name: Image
+      value: ""
+    - name: Email
+      value: "lin.ai@cs.columbia.edu"
+    - name: URL
+      value: "https://example.com"
 
 - title: Education
-  type: time_table
-  contents:
-    - title: PhD
-      institution: University of Zurich, Zurich, Switzerland
-      year: 1905
-      description:
-        - Description 1.
-        - Description 2.
-        - title: Description 3.
-          contents:
-            - Sub-description 1.
-            - Sub-description 2.
-    - title: Federal teaching diploma
-      institution: Eidgenössische Technische Hochschule, Zurich, Switzerland
-      year: 1900
-      description:
-        - Description 1.
-        - Description 2.
-
-- title: Experience
-  type: time_table
-  contents:
-    - title: Professor of Theoretical Physics
-      institution: Institute for Advanced Study, Princeton University
-      year: 1933 - 1955
-      description:
-        - Description 1.
-        - Description 2.
-        - title: Description 3.
-          contents:
-            - Sub-description 1.
-            - Sub-description 2.
-    - title: Visiting Professor
-      institution: California Institute of Technology, Pasadena, California, US
-      year: 1933
-      description:
-        - Description 1.
-        - Description 2.
-
-    - title: Director
-      institution: Kaiser Wilhelm Institute for Physics, Berlin, Germany.
-      year: 1917-1933
-
-    - title: Professor of Theoretical Physics
-      institution: Karl-Ferdinand University, Prague, Czechoslovakia
-      year: 1911 - 1917
-      description:
-
-    - title: Associate Professor of Theoretical Physics
-      institution: University of Zurich, Zurich, Switzerland
-      year: 1909 - 1911
-
-- title: Open Source Projects
-  type: time_table
-  contents:
-    - title: <a href="https://github.com/alshedivat/al-folio">al-folio</a>
-      year: 2015-now
-      description: A beautiful, simple, clean, and responsive Jekyll theme for academics.
-
-- title: Honors and Awards
-  type: time_table
-  contents:
-    - year: 1921
-      items:
-        - Nobel Prize in Physics
-        - Matteucci Medal
-    - year: 2029
-      items:
-        - Max Planck Medal
-
-- title: Academic Interests
-  type: nested_list
-  contents:
-    - title: Topic 1.
-      items:
-        - Description 1.
-        - Description 2.
-    - title: Topic 2.
-      items:
-        - Description 1.
-        - Description 2.
-
-- title: Other Interests
   type: list
   contents:
-    - <u>Hobbies:</u> Hobby 1, Hobby 2, etc.
+    - title: "Columbia University in the City of New York (Ph.D.)"
+      type: map
+      contents:
+        - name: Institution
+          value: "Columbia University in the City of New York"
+        - name: Location
+          value: "New York, USA"
+        - name: URL
+          value: "https://www.cs.columbia.edu/"
+        - name: Area
+          value: "Natural Language Processing"
+        - name: Study Type
+          value: "Ph.D."
+        - name: Start Date
+          value: "2020-09-01"
+        - name: End Date
+          value: "present"
+        - name: Score
+          value: ""
+        - name: Courses
+          value: "[]"
+    - title: "Columbia University in the City of New York (M.Sc.)"
+      type: map
+      contents:
+        - name: Institution
+          value: "Columbia University in the City of New York"
+        - name: Location
+          value: "New York, USA"
+        - name: URL
+          value: "https://www.cs.columbia.edu/"
+        - name: Area
+          value: "Machine Learning"
+        - name: Study Type
+          value: "M.Sc."
+        - name: Start Date
+          value: "2018-09-01"
+        - name: End Date
+          value: "2020-02-01"
+        - name: Score
+          value: ""
+        - name: Courses
+          value: "[]"
+    - title: "University of Waterloo (B.Math)"
+      type: map
+      contents:
+        - name: Institution
+          value: "University of Waterloo"
+        - name: Location
+          value: "Waterloo, Canada"
+        - name: URL
+          value: "https://uwaterloo.ca/"
+        - name: Area
+          value: "Computer Science, Statistics, Actuarial Science"
+        - name: Study Type
+          value: "B.Math"
+        - name: Start Date
+          value: "2013-09-01"
+        - name: End Date
+          value: "2018-04-01"
+        - name: Score
+          value: ""
+        - name: Courses
+          value: "[]"
+    - title: "École Polytechnique Fédérale de Lausanne (Exchange)"
+      type: map
+      contents:
+        - name: Institution
+          value: "École Polytechnique Fédérale de Lausanne"
+        - name: Location
+          value: "Lausanne, Switzerland"
+        - name: URL
+          value: "https://www.epfl.ch/en/"
+        - name: Area
+          value: "Computer Science"
+        - name: Study Type
+          value: "Exchange"
+        - name: Start Date
+          value: "2016-02-01"
+        - name: End Date
+          value: "2016-07-01"
+        - name: Score
+          value: ""
+        - name: Courses
+          value: "[]"
+
+- title: Professional Experience
+  type: list
+  contents:
+    - title: "JP Morgan Chase, Machine Learning Center of Excellence (MLCoE)"
+      type: map
+      contents:
+        - name: Name
+          value: "JP Morgan Chase, Machine Learning Center of Excellence (MLCoE)"
+        - name: Position
+          value: "AI/ML Data Associate Research Intern"
+        - name: URL
+          value: "https://www.jpmorgan.com/technology/applied-ai-and-ml/machine-learning"
+        - name: Start Date
+          value: "2024-06-01"
+        - name: End Date
+          value: "2024-08-31"
+        - name: Summary
+          value: ""
+        - name: Highlights
+          value:
+            - "Engineered an LLM-powered automated evaluation framework for document-level novelty, leveraging atomicity scores and information salience to enhance interpretability and align closely with human judgment."
+            - "Developed a patent-pending innovation, currently under review."
+    - title: "Meta, Video Understanding for Relevance Team"
+      type: map
+      contents:
+        - name: Name
+          value: "Meta, Video Understanding for Relevance Team"
+        - name: Position
+          value: "Research Scientist Intern"
+        - name: URL
+          value: "https://research.facebook.com/"
+        - name: Start Date
+          value: "2022-05-01"
+        - name: End Date
+          value: "2022-09-01"
+        - name: Summary
+          value: ""
+        - name: Highlights
+          value:
+            - "Built a multimodal sentiment classification model with optimized unimodal representation learning, achieving performance on par with state-of-the-art models."
+            - "Designed and implemented a multimodal BYOL framework for self-supervised training, significantly enhancing cross-domain data representation and adaptation."
+    - title: "Electronic Arts"
+      type: map
+      contents:
+        - name: Name
+          value: "Electronic Arts"
+        - name: Position
+          value: "Software Engineer Intern"
+        - name: URL
+          value: "https://www.ea.com/"
+        - name: Start Date
+          value: "2017-09-01"
+        - name: End Date
+          value: "2017-12-01"
+        - name: Summary
+          value: ""
+        - name: Highlights
+          value:
+            - "Engineered a real-time connection pipeline between external editors and FrostEd, enabling seamless database and UI synchronization."
+            - "Built and integrated a language server for an internal scripting language in VS Code, enhancing run-time communication with FrostEd."
+    - title: "Microsoft"
+      type: map
+      contents:
+        - name: Name
+          value: "Microsoft"
+        - name: Position
+          value: "Software Engineer Intern"
+        - name: URL
+          value: "https://www.microsoft.com/en-us/"
+        - name: Start Date
+          value: "2017-01-01"
+        - name: End Date
+          value: "2017-04-01"
+        - name: Summary
+          value: ""
+        - name: Highlights
+          value:
+            - "Developed and launched new features for Office Lens, enabling multi-shot functionality and batch uploads, rolled out globally in August 2017."
+            - "Optimized telemetry endpoints to improve user insights and streamline project management."
+
+- title: Research Experience
+  type: list
+  contents:
+    - title: "SpeechLab, Columbia University (Ph.D. Candidate)"
+      type: map
+      contents:
+        - name: Name
+          value: "SpeechLab, Columbia University"
+        - name: Position
+          value: "Ph.D. Candidate"
+        - name: URL
+          value: "https://www.cs.columbia.edu/speech/lab.cgi"
+        - name: Start Date
+          value: "2020-09-01"
+        - name: End Date
+          value: "present"
+        - name: Summary
+          value: "Advised by Prof. Julia Hirschberg"
+        - name: Highlights
+          value:
+            - "Led multiple DARPA and AFOSR-funded projects on information disorder, including misinformation detection, malicious intent identification, radicalization analysis, and cyberattack defense."
+            - "Advanced LLM safety and integrity by improving LLM generation and addressing misuse."
+    - title: "SpeechLab, Columbia University (Graduate Research Assistant)"
+      type: map
+      contents:
+        - name: Name
+          value: "SpeechLab, Columbia University"
+        - name: Position
+          value: "Graduate Research Assistant"
+        - name: URL
+          value: "https://www.cs.columbia.edu/speech/lab.cgi"
+        - name: Start Date
+          value: "2018-09-01"
+        - name: End Date
+          value: "2020-02-01"
+        - name: Summary
+          value: "Advised by Prof. Julia Hirschberg"
+        - name: Highlights
+          value:
+            - "Contributed to multiple DARPA-funded multimodal paralinguistic projects, including sentiment and humor detection in videos, speech emotion conversion, and speech accent conversion."
+    - title: "University of Waterloo (Undergraduate Research Assistant)"
+      type: map
+      contents:
+        - name: Name
+          value: "University of Waterloo"
+        - name: Position
+          value: "Undergraduate Research Assistant"
+        - name: URL
+          value: "https://cs.uwaterloo.ca/~ppoupart/"
+        - name: Start Date
+          value: "2017-05-01"
+        - name: End Date
+          value: "2018-04-01"
+        - name: Summary
+          value: "Advised by Prof. Pascal Poupart"
+        - name: Highlights
+          value:
+            - "Designed and implemented an RNN-based chatbot with efficient chat history retrieval."
+            - "Developed emotion and stress detection models using time-series data from wearable devices."
+
+- title: Teaching
+  type: list
+  contents:
+    - title: "Advanced Topics in Spoken Language Processing (Columbia University, Fall 2024)"
+      type: map
+      contents:
+        - name: Name
+          value: "Advanced Topics in Spoken Language Processing"
+        - name: Summary
+          value: "Columbia University, Fall 2024"
+        - name: Position
+          value: "Enhanced Teaching Assistant"
+        - name: Start Date
+          value: "2024-09-01"
+        - name: End Date
+          value: "2024-12-31"
+        - name: URL
+          value: "https://www.cs.columbia.edu/~julia/courses/CS6998-24/syllabus24b.html"
+    - title: "Advanced Topics in Spoken Language Processing (Columbia University, Fall 2022)"
+      type: map
+      contents:
+        - name: Name
+          value: "Advanced Topics in Spoken Language Processing"
+        - name: Summary
+          value: "Columbia University, Fall 2022"
+        - name: Position
+          value: "Enhanced Teaching Assistant"
+        - name: Start Date
+          value: "2022-09-01"
+        - name: End Date
+          value: "2022-12-31"
+        - name: URL
+          value: "https://www.cs.columbia.edu/~julia/courses/CS6998-22/syllabus22b.html"
+    - title: "Advanced Topics in Spoken Language Processing (Columbia University, Spring 2022)"
+      type: map
+      contents:
+        - name: Name
+          value: "Advanced Topics in Spoken Language Processing"
+        - name: Summary
+          value: "Columbia University, Spring 2022"
+        - name: Position
+          value: "Enhanced Teaching Assistant"
+        - name: Start Date
+          value: "2022-01-01"
+        - name: End Date
+          value: "2022-05-01"
+        - name: URL
+          value: "https://www.cs.columbia.edu/~julia/courses/CS6998-22/syllabus22.html"
+    - title: "Introduction to Database (Columbia University, Spring 2019)"
+      type: map
+      contents:
+        - name: Name
+          value: "Introduction to Database"
+        - name: Summary
+          value: "Columbia University, Spring 2019"
+        - name: Position
+          value: "Teaching Assistant"
+        - name: Start Date
+          value: "2019-01-01"
+        - name: End Date
+          value: "2019-05-01"
+
+- title: Entrepreneurial Experience
+  type: list
+  contents:
+    - title: "Have You Met (Startup)"
+      type: map
+      contents:
+        - name: Name
+          value: "Have You Met (Startup)"
+        - name: Position
+          value: "Chief AI Lead"
+        - name: URL
+          value: "https://www.haveyoumet.co/"
+        - name: Start Date
+          value: "2023-07-01"
+        - name: End Date
+          value: "present"
+        - name: Summary
+          value: ""
+        - name: Highlights
+          value:
+            - "Leading the AI/ML development for an LLM-powered next-generation dating app, driving innovation and preparing for product launch in October 2024."
+
+- title: Languages
+  type: list
+  contents:
+    - title: "English"
+      type: map
+      contents:
+        - name: Language
+          value: "English"
+        - name: Fluency
+          value: "Bilingual Proficiency"
+        - name: Icon
+          value: ""
+    - title: "Manadarin"
+      type: map
+      contents:
+        - name: Language
+          value: "Manadarin"
+        - name: Fluency
+          value: "Native Speaker"
+        - name: Icon
+          value: ""
+    - title: "Japanese"
+      type: map
+      contents:
+        - name: Language
+          value: "Japanese"
+        - name: Fluency
+          value: "Elementary Proficiency"
+        - name: Icon
+          value: ""
+        - name: PDF
+          value: "Japanese_certificate_Lin.pdf"
+
+- title: Interests
+  type: list
+  contents:
+    - title: "Bartending and Mixology"
+      type: map
+      contents:
+        - name: Name
+          value: "Bartending and Mixology"
+        - name: Icon
+          value: ""
+        - name: PDF
+          value: "CBA_certificate_Lin.pdf"
