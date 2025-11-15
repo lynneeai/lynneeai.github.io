@@ -1,3 +1,19 @@
+"EMNLP 2025":
+  url: https://2025.emnlp.org/
+  color: "#e60013"
+
+"COLM 2025":
+  url: https://colmweb.org/
+  color: "#000000"
+
+"Interspeech 2025":
+  url: https://www.interspeech2025.org/home
+  color: "#c5daf8"
+
+"ACL 2025":
+  url: https://2025.aclweb.org/
+  color: "#ff884a"
+
 "NAACL 2025":
   url: https://2025.naacl.org/
   color: "#ddc035"

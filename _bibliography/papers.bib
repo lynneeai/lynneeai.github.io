@@ -1,3 +1,104 @@
+@article{liu2025mind,
+  title={The mind in the machine: A survey of incorporating psychological theories in llms},
+  author={Liu, Zizhou and Gong, Ziwei and Ai, Lin and Hui, Zheng and Chen, Run and Leach, Colin Wayne and Greene, Michelle R and Hirschberg, Julia},
+  abstract={Psychological insights have long shaped pivotal NLP breakthroughs, including the cognitive underpinnings of attention mechanisms, formative reinforcement learning, and Theory of Mind-inspired social modeling. As Large Language Models (LLMs) continue to grow in scale and complexity, there is a rising consensus that psychology is essential for capturing human-like cognition, behavior, and interaction. This paper reviews how psychological theories can inform and enhance stages of LLM development, including data, pre-training, post-training, and evaluation\&application. Our survey integrates insights from cognitive, developmental, behavioral, social, personality psychology, and psycholinguistics. Our analysis highlights current trends and gaps in how psychological theories are applied. By examining both cross-domain connections and points of tension, we aim to bridge disciplinary divides and promote more thoughtful integration of psychology into future NLP research.},
+  journal={arXiv preprint arXiv:2505.00003},
+  year={2025},
+  pdf={https://arxiv.org/pdf/2505.00003},
+  bibtex_show={true},
+  preview={psychllm.png},
+  selected={true},
+}
+
+@inproceedings{bojic-etal-2025-smartminer,
+  title = "{SMARTM}iner: Extracting and Evaluating {SMART} Goals from Low-Resource Health Coaching Notes",
+  author = "Bojic, Iva  and
+    Ong, Qi Chwen  and
+    Ma, Stephanie Hilary Xinyi  and
+    Ai, Lin  and
+    Liu, Zheng  and
+    Gong, Ziwei  and
+    Hirschberg, Julia  and
+    Ho, Andy Hau Yan  and
+    Khong, Andy W. H.",
+  editor = "Christodoulopoulos, Christos  and
+    Chakraborty, Tanmoy  and
+    Rose, Carolyn  and
+    Peng, Violet",
+  booktitle = "Findings of the Association for Computational Linguistics: EMNLP 2025",
+  month = nov,
+  year = "2025",
+  address = "Suzhou, China",
+  publisher = "Association for Computational Linguistics",
+  url = "https://aclanthology.org/2025.findings-emnlp.885/",
+  doi = "10.18653/v1/2025.findings-emnlp.885",
+  pages = "16288--16305",
+  ISBN = "979-8-89176-335-7",
+  abstract = "We present SMARTMiner, a framework for extracting and evaluating specific, measurable, attainable, relevant, time-bound (SMART) goals from unstructured health coaching (HC) notes. Developed in response to challenges observed during a clinical trial, the SMARTMiner achieves two tasks: (i) extracting behavior change goal spans and (ii) categorizing their SMARTness. We also introduce SMARTSpan, the first publicly available dataset of 173 HC notes annotated with 266 goals and SMART attributes. SMARTMiner incorporates an extractive goal retriever with a component-wise SMARTness classifier. Experiment results show that extractive models significantly outperformed their generative counterparts in low-resource settings, and that two-stage fine-tuning substantially boosted performance. The SMARTness classifier achieved up to 0.91 SMART F1 score, while the full SMARTMiner maintained high end-to-end accuracy. This work bridges healthcare, behavioral science, and natural language processing to support health coaches and clients with structured goal tracking - paving way for automated weekly goal reviews between human-led HC sessions. Both the code and the dataset are available at: https://github.com/IvaBojic/SMARTMiner.",
+  preview={smartspan.png},
+  pdf={https://aclanthology.org/2025.findings-emnlp.885.pdf},
+  bibtex_show={true},
+  abbr={EMNLP 2025},
+}
+
+@article{kumarage2025personalized,
+  title={Personalized Attacks of Social Engineering in Multi-turn Conversations--LLM Agents for Simulation and Detection},
+  author={Kumarage, Tharindu and Johnson, Cameron and Adams, Jadie and Ai, Lin and Kirchner, Matthias and Hoogs, Anthony and Garland, Joshua and Hirschberg, Julia and Basharat, Arslan and Liu, Huan},
+  abstract={The rapid advancement of conversational agents, particularly chatbots powered by Large Language Models (LLMs), poses a significant risk of social engineering (SE) attacks on social media platforms. SE detection in multi-turn, chat-based interactions is considerably more complex than single-instance detection due to the dynamic nature of these conversations. A critical factor in mitigating this threat is understanding the SE attack mechanisms through which SE attacks operate, specifically how attackers exploit vulnerabilities and how victims' personality traits contribute to their susceptibility. In this work, we propose an LLM-agentic framework, SE-VSim, to simulate SE attack mechanisms by generating multi-turn conversations. We model victim agents with varying personality traits to assess how psychological profiles influence susceptibility to manipulation. Using a dataset of over 1000 simulated conversations, we examine attack scenarios in which adversaries, posing as recruiters, funding agencies, and journalists, attempt to extract sensitive information. Based on this analysis, we present a proof of concept, SE-OmniGuard, to offer personalized protection to users by leveraging prior knowledge of the victims personality, evaluating attack strategies, and monitoring information exchanges in conversations to identify potential SE attempts.},
+  journal={arXiv preprint arXiv:2503.15552},
+  year={2025},
+  pdf={https://arxiv.org/pdf/2503.15552},
+  preview={CSE_Agents.png},
+  bibtex_show={true},
+  abbr={COLM 2025},
+}
+
+@inproceedings{gong25b_interspeech,
+  title     = {Learning More with Less: Self-Supervised Approaches forLow-Resource Speech Emotion Recognition},
+  author    = {Ziwei Gong and Pengyuan Shi and Kaan Donbekci and Lin Ai and Run Chen and David Sasu and Zehui Wu and Julia Hirschberg},
+  year      = {2025},
+  booktitle = {Interspeech 2025},
+  pages     = {151--155},
+  doi       = {10.21437/Interspeech.2025-1006},
+  issn      = {2958-1796},
+  pdf={https://www.isca-archive.org/interspeech_2025/gong25b_interspeech.pdf},
+  bibtex_show={true},
+  preview={emo_transfer.png},
+  abstract={Speech Emotion Recognition (SER) has seen significant progress with deep learning, yet remains challenging for Low-Resource Languages (LRLs) due to the scarcity of annotated data. In this work, we explore unsupervised learning to improve SER in low-resource settings. Specifically, we investigate contrastive learning (CL) and Bootstrap Your Own Latent (BYOL) as self-supervised approaches to enhance cross-lingual generalization. Our methods achieve notable F1 score improvements of 10.6% in Urdu, 15.2% in German, and 13.9% in Bangla, demonstrating their effectiveness in LRLs. Additionally, we analyze model behavior to provide insights on key factors influencing performance across languages, and also highlighting challenges in low-resource SER. This work provides a foundation for developing more inclusive, explainable, and robust emotion recognition systems for underrepresented languages.},
+  abbr={Interspeech 2025},
+}
+
+@inproceedings{gong25c_interspeech,
+  title     = {Comparison-Based Automatic Evaluation for Meeting Summarization},
+  author    = {Ziwei Gong and Lin Ai and Harsh Deshpande and Alexander Johnson and Emmy Phung and Zehui Wu and Ahmad Emami and Julia Hirschberg},
+  year      = {2025},
+  booktitle = {Interspeech 2025},
+  pages     = {291--295},
+  doi       = {10.21437/Interspeech.2025-2771},
+  issn      = {2958-1796},
+  pdf={https://www.isca-archive.org/interspeech_2025/gong25c_interspeech.pdf},
+  preview={cream.png},
+  abstract={Large Language Models (LLMs) have spurred interest in automatic evaluation methods for summarization, offering a faster, more cost-effective alternative to human evaluation. However, existing methods often fall short when applied to complex tasks like long-context summarizations and dialogue-based meeting summarizations. In this paper, we introduce CREAM (Comparison-based Reference-free Elo-ranked Automatic evaluation for Meeting summarization), a novel framework that addresses the unique challenges of evaluating meeting summaries. CREAM leverages a combination of chain-of-thought reasoning and key facts alignment to assess conciseness and completeness of model-generated summaries without requiring reference. By employing an ELO ranking system, our approach provides a robust mechanism for comparing the quality of different models or prompt configurations.},
+  bibtex_show={true},
+  abbr={Interspeech 2025},
+}
+
+@inproceedings{sasu-etal-2025-akan,
+  title={Akan Cinematic Emotions (ACE): A Multimodal Multi-party Dataset for Emotion Recognition in Movie Dialogues},
+  author={Sasu, David and Wu, Zehui and Gong, Ziwei and Chen, Run and Shi, Pengyuan and Ai, Lin and Hirschberg, Julia and Schluter, Natalie},
+  booktitle = "Findings of the Association for Computational Linguistics: ACL 2025",
+  month = jul,
+  year = "2025",
+  address = "Vienna, Austria",
+  publisher = "Association for Computational Linguistics",
+  abbr={ACL 2025},
+  pdf={https://aclanthology.org/2025.findings-acl.510/},
+  preview={ace.png},
+  bibtex_show={true},
+  abbr={ACL 2025},
+  selected={true},
+}
+
 @inproceedings{wu2024beyond,
   title={Beyond Silent Letters: Amplifying LLMs in Emotion Recognition with Vocal Nuances},
   author={Wu, Zehui and Gong, Ziwei and Ai, Lin and Shi, Pengyuan and Donbekci, Kaan and Hirschberg, Julia},
@@ -11,6 +112,7 @@
   pdf={https://arxiv.org/pdf/2407.21315},
   preview={beyond_silent_letters.png},
   bibtex_show={true},
+  selected={true},
 }
 
 @inproceedings{ai-etal-2025-novascore,
@@ -43,17 +145,6 @@
   pdf={https://aclanthology.org/2025.coling-main.376.pdf},
   preview={propainsight.png},
   selected={true},
-  bibtex_show={true},
-}
-
-@article{sasu2025akan,
-  title={Akan Cinematic Emotions (ACE): A Multimodal Multi-party Dataset for Emotion Recognition in Movie Dialogues},
-  author={Sasu, David and Wu, Zehui and Gong, Ziwei and Chen, Run and Shi, Pengyuan and Ai, Lin and Hirschberg, Julia and Schluter, Natalie},
-  abstract={In this paper, we introduce the Akan Conversation Emotion (ACE) dataset, the first multimodal emotion dialogue dataset for an African language, addressing the significant lack of resources for low-resource languages in emotion recognition research. ACE, developed for the Akan language, contains 385 emotion-labeled dialogues and 6,162 utterances across audio, visual, and textual modalities, along with word-level prosodic prominence annotations. The presence of prosodic labels in this dataset also makes it the first prosodically annotated African language dataset. We demonstrate the quality and utility of ACE through experiments using state-of-the-art emotion recognition methods, establishing solid baselines for future research. We hope ACE inspires further work on inclusive, linguistically and culturally diverse NLP resources.},
-  journal={arXiv preprint arXiv:2502.10973},
-  year={2025},
-  preview={ace.png},
-  pdf={https://arxiv.org/pdf/2502.10973},
   bibtex_show={true},
 }
 
@@ -102,7 +193,6 @@
   publisher = "Association for Computational Linguistics",
   abbr={EMNLP 2024},
   preview={TaskSettingExample.png},
-  selected={true},
   bibtex_show={true},
 }
 
@@ -119,17 +209,6 @@
   preview={tweetintent@crisis_examples.jpg},
   bibtex_show={true},
   abbr={ICWSM 2024},
-}
-
-@article{gong2024cream,
-  title={CREAM: Comparison-Based Reference-Free ELO-Ranked Automatic Evaluation for Meeting Summarization},
-  author={Gong, Ziwei and Ai, Lin and Deshpande, Harshsaiprasad and Johnson, Alexander and Phung, Emmy and Wu, Zehui and Emami, Ahmad and Hirschberg, Julia},
-  abstract={Large Language Models (LLMs) have spurred interest in automatic evaluation methods for summarization, offering a faster, more cost-effective alternative to human evaluation. However, existing methods often fall short when applied to complex tasks like long-context summarizations and dialogue-based meeting summarizations. In this paper, we introduce CREAM (Comparison-Based Reference-Free Elo-Ranked Automatic Evaluation for Meeting Summarization), a novel framework that addresses the unique challenges of evaluating meeting summaries. CREAM leverages a combination of chain-of-thought reasoning and key facts alignment to assess conciseness and completeness of model-generated summaries without requiring reference. By employing an ELO ranking system, our approach provides a robust mechanism for comparing the quality of different models or prompt configurations.},
-  journal={arXiv preprint arXiv:2409.10883},
-  year={2024},
-  pdf={https://arxiv.org/pdf/2409.10883},
-  preview={cream.png},
-  bibtex_show={true},
 }
 
 @inproceedings{ai2022combating,
@@ -152,6 +231,7 @@
   journal={The 9th International Conference on Computational Social Science},
   year={2023},
   pdf={https://arxiv.org/pdf/2404.14616},
+  preview={rg_opinion.png},
   bibtex_show={true},
   abbr={IC<sup>2</sup>S<sup>2</sup> 2023},
 }
