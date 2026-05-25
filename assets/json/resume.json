@@ -1,8 +1,8 @@
 {
   "basics": {
     "name": "Lin Ai",
-    "affiliation": "Columbia University in the City of New York",
-    "position": "Ph.D. Candidate",
+    "affiliation": "Microsoft",
+    "position": "Senior Applied Scientist",
     "image": "",
     "email": "lin.ai@cs.columbia.edu",
     "url": "https://lynneeai.github.io/",
@@ -27,12 +27,14 @@
       "institution": "Columbia University in the City of New York",
       "location": "New York, USA",
       "url": "https://www.cs.columbia.edu/",
-      "area": "Natural Language Processing",
+      "area": "Computer Science, Natural Language Processing",
       "studyType": "Ph.D.",
       "startDate": "2020-09-01",
-      "endDate": "present",
+      "endDate": "2025-10-01",
       "score": "",
-      "courses": []
+      "courses": [
+        "Advisor: Prof. Julia Hirschberg"
+      ]
     },
     {
       "institution": "Columbia University in the City of New York",
@@ -54,176 +56,133 @@
       "startDate": "2013-09-01",
       "endDate": "2018-04-01",
       "score": "",
-      "courses": []
-    },
-    {
-      "institution": "École Polytechnique Fédérale de Lausanne",
-      "location": "Lausanne, Switzerland",
-      "url": "https://www.epfl.ch/en/",
-      "area": "Computer Science",
-      "studyType": "Exchange",
-      "startDate": "2016-02-01",
-      "endDate": "2016-07-01",
-      "score": "",
-      "courses": []
+      "courses": [
+        "Graduated with Distinction"
+      ]
     }
   ],
-  "professionnal experience": [
+  "interests": [
     {
-      "name": "JP Morgan Chase, Machine Learning Center of Excellence (MLCoE)",
+      "name": "Human-Agent Systems",
+      "icon": "",
+      "keywords": [
+        "Context-aware productivity agents",
+        "Workflow/workstream understanding",
+        "User and agent telemetry",
+        "Agent evaluation"
+      ]
+    },
+    {
+      "name": "Trustworthy NLP",
+      "icon": "",
+      "keywords": [
+        "LLM safety and alignment",
+        "Information disorder",
+        "Social engineering defense",
+        "Responsible AI"
+      ]
+    }
+  ],
+  "professional experience": [
+    {
+      "name": "Microsoft, IDEAS Research",
+      "position": "Senior Applied Scientist",
+      "url": "https://www.microsoft.com/en-us/research/people/lai/",
+      "location": "Mountain View, CA",
+      "startDate": "2025-11-01",
+      "endDate": "Present",
+      "summary": "Led by Dr. Scott Counts",
+      "highlights": [
+        "Advancing research on productivity agents that use workflow, workstream, artifact, collaborator, and context signals beyond isolated task-level assistance.",
+        "Developed telemetry-driven workflow understanding methods that convert Microsoft 365 user actions into hierarchical natural-language representations, enabling analysis across tasks, sessions, work episodes, and long-running workstreams.",
+        "Delivered research prototypes, internal demos, technical writeups, and evaluation frameworks for context-aware agent experiences, including workflow-centered memory, workstream discovery, and telemetry-based diagnosis of Copilot-assisted workflows."
+      ]
+    },
+    {
+      "name": "Adobe Research, Data Intelligence Team",
+      "position": "Research Scientist Intern",
+      "url": "https://research.adobe.com/person/vishy-swaminathan/",
+      "location": "San Jose, CA",
+      "startDate": "2025-05-01",
+      "endDate": "2025-08-31",
+      "summary": "Led by Dr. Vishy Swaminathan",
+      "highlights": [
+        "Developed SteER, an interactive deep research agent that adaptively pauses to solicit user guidance, enabling more personalized and controllable long-form research workflows.",
+        "Designed a cost-benefit pause policy and persona-aware branch selection method to balance user alignment, information gain, exploration diversity, and interaction cost.",
+        "Delivered research prototypes, internal demos, human evaluation studies, and invention disclosure materials demonstrating improved alignment and focus over autonomous deep research baselines."
+      ]
+    },
+    {
+      "name": "JP Morgan Chase, Machine Learning Center of Excellence",
       "position": "AI/ML Data Associate Research Intern",
-      "url": "https://www.jpmorgan.com/technology/applied-ai-and-ml/machine-learning",
+      "url": "https://www.jpmorgan.com/technology/applied-ai-and-ml/machine-learning/lidia-mangu",
+      "location": "New York, NY",
       "startDate": "2024-06-01",
       "endDate": "2024-08-31",
-      "summary": "",
+      "summary": "Led by Dr. Lidia Mangu",
       "highlights": [
-        "Engineered an LLM-powered automated evaluation framework for document-level novelty, leveraging atomicity scores and information salience to enhance interpretability and align closely with human judgment.",
-        "Developed a patent-pending innovation, currently under review."
+        "Developed NovAScore, an automated document-level novelty metric that combines atomic content units with salience weighting to evaluate information distinctiveness and reduce redundancy.",
+        "Delivered a patent-pending framework for document curation, training data selection, and retrieval/evidence ranking."
       ]
     },
     {
-      "name": "Meta, Video Understanding for Relevance Team",
+      "name": "Meta, Multimodal Team",
       "position": "Research Scientist Intern",
-      "url": "https://research.facebook.com/",
+      "url": "https://ai.meta.com/people/422479863606947/florian-metze/",
+      "location": "New York, NY",
       "startDate": "2022-05-01",
       "endDate": "2022-09-01",
-      "summary": "",
+      "summary": "Led by Dr. Florian Metze",
       "highlights": [
-        "Built a multimodal sentiment classification model with optimized unimodal representation learning, achieving performance on par with state-of-the-art models.",
-        "Designed and implemented a multimodal BYOL framework for self-supervised training, significantly enhancing cross-domain data representation and adaptation."
-      ]
-    },
-    {
-      "name": "Electronic Arts",
-      "position": "Software Engineer Intern",
-      "url": "https://www.ea.com/",
-      "startDate": "2017-09-01",
-      "endDate": "2017-12-01",
-      "summary": "",
-      "highlights": [
-        "Engineered a real-time connection pipeline between external editors and FrostEd, enabling seamless database and UI synchronization.",
-        "Built and integrated a language server for an internal scripting language in VS Code, enhancing run-time communication with FrostEd."
-      ]
-    },
-    {
-      "name": "Microsoft",
-      "position": "Software Engineer Intern",
-      "url": "https://www.microsoft.com/en-us/",
-      "startDate": "2017-01-01",
-      "endDate": "2017-04-01",
-      "summary": "",
-      "highlights": [
-        "Developed and launched new features for Office Lens, enabling multi-shot functionality and batch uploads, rolled out globally in August 2017.",
-        "Optimized telemetry endpoints to improve user insights and streamline project management."
+        "Built multimodal sentiment classification models for short-form videos, improving cross-modal representation learning and achieving competitive performance with state-of-the-art baselines.",
+        "Designed a multimodal BYOL self-supervised learning framework to improve cross-domain representation adaptation."
       ]
     }
   ],
   "research experience": [
     {
-      "name": "SpeechLab, Columbia University",
-      "position": "Ph.D. Candidate",
+      "name": "Columbia University",
+      "position": "Ph.D. Researcher",
       "url": "https://www.cs.columbia.edu/speech/lab.cgi",
+      "location": "New York, NY",
       "startDate": "2020-09-01",
-      "endDate": "present",
-      "summary": "Advised by Prof. Julia Hirschberg",
+      "endDate": "2025-10-01",
+      "summary": "Advisor: Prof. Julia Hirschberg; Dissertation: Towards Trustworthy AI: Detecting, Understanding, and Mitigating Information Disorder",
       "highlights": [
-        "Led multiple DARPA and AFOSR-funded projects on information disorder, including misinformation detection, malicious intent identification, radicalization analysis, and cyberattack defense.",
-        "Advanced LLM safety and integrity by improving LLM generation and addressing misuse."
-      ]
-    },
-    {
-      "name": "SpeechLab, Columbia University",
-      "position": "Graduate Research Assistant",
-      "url": "https://www.cs.columbia.edu/speech/lab.cgi",
-      "startDate": "2018-09-01",
-      "endDate": "2020-02-01",
-      "summary": "Advised by Prof. Julia Hirschberg",
-      "highlights": [
-        "Contributed to multiple DARPA-funded multimodal paralinguistic projects, including sentiment and humor detection in videos, speech emotion conversion, and speech accent conversion."
-      ]
-    },
-    {
-      "name": "University of Waterloo",
-      "position": "Undergraduate Research Assistant",
-      "url": "https://cs.uwaterloo.ca/~ppoupart/",
-      "startDate": "2017-05-01",
-      "endDate": "2018-04-01",
-      "summary": "Advised by Prof. Pascal Poupart",
-      "highlights": [
-        "Designed and implemented an RNN-based chatbot with efficient chat history retrieval.",
-        "Developed emotion and stress detection models using time-series data from wearable devices."
+        "Developed a detection-understanding-mitigation framework for trustworthy AI systems addressing information disorder across social media, multimodal content, and LLM-mediated communication.",
+        "Built models and datasets for misinformation, propaganda, radicalization, malicious intent, and audience perception, integrating textual, visual, social-network, and human-centered signals.",
+        "Designed mitigation systems for LLM-era risks, including social-engineering defense, factuality-controlled generation, distinctiveness-aware curation, and human-in-the-loop agent steering."
       ]
     }
   ],
-  "teaching": [
+  "skills": [
     {
-      "name": "Advanced Topics in Spoken Language Processing",
-      "summary": "Columbia University, Fall 2024",
-      "position": "Enhanced Teaching Assistant",
-      "startDate": "2024-09-01",
-      "endDate": "2024-12-31",
-      "url": "https://www.cs.columbia.edu/~julia/courses/CS6998-24/syllabus24b.html"
-    },
-    {
-      "name": "Advanced Topics in Spoken Language Processing",
-      "summary": "Columbia University, Fall 2022",
-      "position": "Enhanced Teaching Assistant",
-      "startDate": "2022-09-01",
-      "endDate": "2022-12-31",
-      "url": "https://www.cs.columbia.edu/~julia/courses/CS6998-22/syllabus22b.html"
-    },
-    {
-      "name": "Advanced Topics in Spoken Language Processing",
-      "summary": "Columbia University, Spring 2022",
-      "position": "Enhanced Teaching Assistant",
-      "startDate": "2022-01-01",
-      "endDate": "2022-05-01",
-      "url": "https://www.cs.columbia.edu/~julia/courses/CS6998-22/syllabus22.html"
-    },
-    {
-      "name": "Introduction to Database",
-      "summary": "Columbia University, Spring 2019",
-      "position": "Teaching Assistant",
-      "startDate": "2019-01-01",
-      "endDate": "2019-05-01"
-    }
-  ],
-  "entrepreneurial experience": [
-    {
-      "name": "Have You Met (Startup)",
-      "position": "Chief AI Lead",
-      "url": "https://www.haveyoumet.co/",
-      "startDate": "2023-07-01",
-      "endDate": "present",
-      "summary": "",
-      "highlights": [
-        "Leading the AI/ML development for an LLM-powered next-generation dating app, driving innovation and preparing for product launch in October 2024."
-      ]
-    }
-  ],
-  "languages": [
-    {
-      "language": "English",
-      "fluency": "Bilingual Proficiency",
-      "icon": ""
-    },
-    {
-      "language": "Manadarin",
-      "fluency": "Native Speaker",
-      "icon": ""
-    },
-    {
-      "language": "Japanese",
-      "fluency": "Elementary Proficiency",
+      "name": "Methods",
+      "level": "",
       "icon": "",
-      "pdf": "Japanese_certificate_Lin.pdf"
-    }
-  ],
-  "interests": [
+      "keywords": [
+        "LLM agents",
+        "Human-agent interaction",
+        "Telemetry modeling",
+        "Multimodal learning",
+        "Graph neural networks",
+        "Evaluation",
+        "User studies"
+      ]
+    },
     {
-      "name": "Bartending and Mixology",
+      "name": "Tools",
+      "level": "",
       "icon": "",
-      "pdf": "CBA_certificate_Lin.pdf"
+      "keywords": [
+        "Python",
+        "PyTorch",
+        "Hugging Face",
+        "LangChain/LangGraph",
+        "SQL/Kusto",
+        "Azure",
+        "Git"
+      ]
     }
   ]
 }

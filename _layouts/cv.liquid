@@ -88,7 +88,15 @@ layout: default
           {% if data[0] == 'meta' or data[1].size == 0 %} {% continue %} {% endif %}
           <a class="anchor" id="{{ data[0] }}"></a>
           <div class="card mt-3 p-3">
-            <h3 class="card-title font-weight-medium">{{ data[0] | capitalize }}</h3>
+            {% assign section_title = data[0] | capitalize %}
+            {% if data[0] == 'interests' %}
+              {% assign section_title = 'Research Interests' %}
+            {% elsif data[0] == 'research experience' %}
+              {% assign section_title = 'Doctoral Research' %}
+            {% elsif data[0] == 'skills' %}
+              {% assign section_title = 'Technical Skills' %}
+            {% endif %}
+            <h3 class="card-title font-weight-medium">{{ section_title }}</h3>
             <div>
               {% case data[0] %}
                 {% when 'basics' %}

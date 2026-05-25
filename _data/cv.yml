@@ -4,15 +4,13 @@
     - name: Name
       value: "Lin Ai"
     - name: Affiliation
-      value: "Columbia University in the City of New York"
+      value: "Microsoft"
     - name: Position
-      value: "Ph.D. Candidate"
-    - name: Image
-      value: ""
+      value: "Senior Applied Scientist"
     - name: Email
       value: "lin.ai@cs.columbia.edu"
     - name: URL
-      value: "https://example.com"
+      value: "https://lynneeai.github.io/"
 
 - title: Education
   type: list
@@ -27,17 +25,15 @@
         - name: URL
           value: "https://www.cs.columbia.edu/"
         - name: Area
-          value: "Natural Language Processing"
+          value: "Computer Science, Natural Language Processing"
         - name: Study Type
           value: "Ph.D."
         - name: Start Date
           value: "2020-09-01"
         - name: End Date
-          value: "present"
-        - name: Score
-          value: ""
-        - name: Courses
-          value: "[]"
+          value: "2025-10-01"
+        - name: Summary
+          value: "Advisor: Prof. Julia Hirschberg"
     - title: "Columbia University in the City of New York (M.Sc.)"
       type: map
       contents:
@@ -55,10 +51,6 @@
           value: "2018-09-01"
         - name: End Date
           value: "2020-02-01"
-        - name: Score
-          value: ""
-        - name: Courses
-          value: "[]"
     - title: "University of Waterloo (B.Math)"
       type: map
       contents:
@@ -76,40 +68,65 @@
           value: "2013-09-01"
         - name: End Date
           value: "2018-04-01"
-        - name: Score
-          value: ""
-        - name: Courses
-          value: "[]"
-    - title: "École Polytechnique Fédérale de Lausanne (Exchange)"
-      type: map
-      contents:
-        - name: Institution
-          value: "École Polytechnique Fédérale de Lausanne"
-        - name: Location
-          value: "Lausanne, Switzerland"
-        - name: URL
-          value: "https://www.epfl.ch/en/"
-        - name: Area
-          value: "Computer Science"
-        - name: Study Type
-          value: "Exchange"
-        - name: Start Date
-          value: "2016-02-01"
-        - name: End Date
-          value: "2016-07-01"
-        - name: Score
-          value: ""
-        - name: Courses
-          value: "[]"
+        - name: Summary
+          value: "Graduated with Distinction"
+
+- title: Research Interests
+  type: map
+  contents:
+    - name: Human-Agent Systems
+      value: "Context-aware productivity agents, workflow/workstream understanding, user and agent telemetry, agent evaluation"
+    - name: Trustworthy NLP
+      value: "LLM safety and alignment, information disorder, social engineering defense, responsible AI"
 
 - title: Professional Experience
   type: list
   contents:
-    - title: "JP Morgan Chase, Machine Learning Center of Excellence (MLCoE)"
+    - title: "Microsoft, IDEAS Research"
       type: map
       contents:
         - name: Name
-          value: "JP Morgan Chase, Machine Learning Center of Excellence (MLCoE)"
+          value: "Microsoft, IDEAS Research"
+        - name: Position
+          value: "Senior Applied Scientist"
+        - name: URL
+          value: "https://www.microsoft.com/en-us/research/people/lai/"
+        - name: Start Date
+          value: "2025-11-01"
+        - name: End Date
+          value: "present"
+        - name: Summary
+          value: "Led by Dr. Scott Counts"
+        - name: Highlights
+          value:
+            - "Advancing research on productivity agents that use workflow, workstream, artifact, collaborator, and context signals beyond isolated task-level assistance."
+            - "Developed telemetry-driven workflow understanding methods that convert Microsoft 365 user actions into hierarchical natural-language representations."
+            - "Delivered research prototypes, internal demos, technical writeups, and evaluation frameworks for context-aware agent experiences and Copilot-assisted workflows."
+    - title: "Adobe Research, Data Intelligence Team"
+      type: map
+      contents:
+        - name: Name
+          value: "Adobe Research, Data Intelligence Team"
+        - name: Position
+          value: "Research Scientist Intern"
+        - name: URL
+          value: "https://research.adobe.com/person/vishy-swaminathan/"
+        - name: Start Date
+          value: "2025-05-01"
+        - name: End Date
+          value: "2025-08-31"
+        - name: Summary
+          value: "Led by Dr. Vishy Swaminathan"
+        - name: Highlights
+          value:
+            - "Developed SteER, an interactive deep research agent that adaptively pauses to solicit user guidance for controllable long-form research workflows."
+            - "Designed a cost-benefit pause policy and persona-aware branch selection method balancing alignment, information gain, exploration diversity, and interaction cost."
+            - "Delivered research prototypes, internal demos, human evaluation studies, and invention disclosure materials."
+    - title: "JP Morgan Chase, Machine Learning Center of Excellence"
+      type: map
+      contents:
+        - name: Name
+          value: "JP Morgan Chase, Machine Learning Center of Excellence"
         - name: Position
           value: "AI/ML Data Associate Research Intern"
         - name: URL
@@ -119,16 +136,16 @@
         - name: End Date
           value: "2024-08-31"
         - name: Summary
-          value: ""
+          value: "Led by Dr. Lidia Mangu"
         - name: Highlights
           value:
-            - "Engineered an LLM-powered automated evaluation framework for document-level novelty, leveraging atomicity scores and information salience to enhance interpretability and align closely with human judgment."
-            - "Developed a patent-pending innovation, currently under review."
-    - title: "Meta, Video Understanding for Relevance Team"
+            - "Developed NovAScore, an automated document-level novelty metric combining atomic content units with salience weighting."
+            - "Delivered a patent-pending framework for document curation, training data selection, and retrieval/evidence ranking."
+    - title: "Meta, Multimodal Team"
       type: map
       contents:
         - name: Name
-          value: "Meta, Video Understanding for Relevance Team"
+          value: "Meta, Multimodal Team"
         - name: Position
           value: "Research Scientist Intern"
         - name: URL
@@ -138,236 +155,40 @@
         - name: End Date
           value: "2022-09-01"
         - name: Summary
-          value: ""
+          value: "Led by Dr. Florian Metze"
         - name: Highlights
           value:
-            - "Built a multimodal sentiment classification model with optimized unimodal representation learning, achieving performance on par with state-of-the-art models."
-            - "Designed and implemented a multimodal BYOL framework for self-supervised training, significantly enhancing cross-domain data representation and adaptation."
-    - title: "Electronic Arts"
-      type: map
-      contents:
-        - name: Name
-          value: "Electronic Arts"
-        - name: Position
-          value: "Software Engineer Intern"
-        - name: URL
-          value: "https://www.ea.com/"
-        - name: Start Date
-          value: "2017-09-01"
-        - name: End Date
-          value: "2017-12-01"
-        - name: Summary
-          value: ""
-        - name: Highlights
-          value:
-            - "Engineered a real-time connection pipeline between external editors and FrostEd, enabling seamless database and UI synchronization."
-            - "Built and integrated a language server for an internal scripting language in VS Code, enhancing run-time communication with FrostEd."
-    - title: "Microsoft"
-      type: map
-      contents:
-        - name: Name
-          value: "Microsoft"
-        - name: Position
-          value: "Software Engineer Intern"
-        - name: URL
-          value: "https://www.microsoft.com/en-us/"
-        - name: Start Date
-          value: "2017-01-01"
-        - name: End Date
-          value: "2017-04-01"
-        - name: Summary
-          value: ""
-        - name: Highlights
-          value:
-            - "Developed and launched new features for Office Lens, enabling multi-shot functionality and batch uploads, rolled out globally in August 2017."
-            - "Optimized telemetry endpoints to improve user insights and streamline project management."
+            - "Built multimodal sentiment classification models for short-form videos, improving cross-modal representation learning."
+            - "Designed a multimodal BYOL self-supervised learning framework to improve cross-domain representation adaptation."
 
-- title: Research Experience
+- title: Doctoral Research
   type: list
   contents:
-    - title: "SpeechLab, Columbia University (Ph.D. Candidate)"
+    - title: "Columbia University, Ph.D. Researcher"
       type: map
       contents:
         - name: Name
-          value: "SpeechLab, Columbia University"
+          value: "Columbia University"
         - name: Position
-          value: "Ph.D. Candidate"
+          value: "Ph.D. Researcher"
         - name: URL
           value: "https://www.cs.columbia.edu/speech/lab.cgi"
         - name: Start Date
           value: "2020-09-01"
         - name: End Date
-          value: "present"
+          value: "2025-10-01"
         - name: Summary
-          value: "Advised by Prof. Julia Hirschberg"
+          value: "Advisor: Prof. Julia Hirschberg; Dissertation: Towards Trustworthy AI: Detecting, Understanding, and Mitigating Information Disorder"
         - name: Highlights
           value:
-            - "Led multiple DARPA and AFOSR-funded projects on information disorder, including misinformation detection, malicious intent identification, radicalization analysis, and cyberattack defense."
-            - "Advanced LLM safety and integrity by improving LLM generation and addressing misuse."
-    - title: "SpeechLab, Columbia University (Graduate Research Assistant)"
-      type: map
-      contents:
-        - name: Name
-          value: "SpeechLab, Columbia University"
-        - name: Position
-          value: "Graduate Research Assistant"
-        - name: URL
-          value: "https://www.cs.columbia.edu/speech/lab.cgi"
-        - name: Start Date
-          value: "2018-09-01"
-        - name: End Date
-          value: "2020-02-01"
-        - name: Summary
-          value: "Advised by Prof. Julia Hirschberg"
-        - name: Highlights
-          value:
-            - "Contributed to multiple DARPA-funded multimodal paralinguistic projects, including sentiment and humor detection in videos, speech emotion conversion, and speech accent conversion."
-    - title: "University of Waterloo (Undergraduate Research Assistant)"
-      type: map
-      contents:
-        - name: Name
-          value: "University of Waterloo"
-        - name: Position
-          value: "Undergraduate Research Assistant"
-        - name: URL
-          value: "https://cs.uwaterloo.ca/~ppoupart/"
-        - name: Start Date
-          value: "2017-05-01"
-        - name: End Date
-          value: "2018-04-01"
-        - name: Summary
-          value: "Advised by Prof. Pascal Poupart"
-        - name: Highlights
-          value:
-            - "Designed and implemented an RNN-based chatbot with efficient chat history retrieval."
-            - "Developed emotion and stress detection models using time-series data from wearable devices."
+            - "Developed a detection-understanding-mitigation framework for trustworthy AI systems addressing information disorder across social media, multimodal content, and LLM-mediated communication."
+            - "Built models and datasets for misinformation, propaganda, radicalization, malicious intent, and audience perception across textual, visual, social-network, and human-centered signals."
+            - "Designed mitigation systems for LLM-era risks, including social-engineering defense, factuality-controlled generation, distinctiveness-aware curation, and human-in-the-loop agent steering."
 
-- title: Teaching
-  type: list
+- title: Technical Skills
+  type: map
   contents:
-    - title: "Advanced Topics in Spoken Language Processing (Columbia University, Fall 2024)"
-      type: map
-      contents:
-        - name: Name
-          value: "Advanced Topics in Spoken Language Processing"
-        - name: Summary
-          value: "Columbia University, Fall 2024"
-        - name: Position
-          value: "Enhanced Teaching Assistant"
-        - name: Start Date
-          value: "2024-09-01"
-        - name: End Date
-          value: "2024-12-31"
-        - name: URL
-          value: "https://www.cs.columbia.edu/~julia/courses/CS6998-24/syllabus24b.html"
-    - title: "Advanced Topics in Spoken Language Processing (Columbia University, Fall 2022)"
-      type: map
-      contents:
-        - name: Name
-          value: "Advanced Topics in Spoken Language Processing"
-        - name: Summary
-          value: "Columbia University, Fall 2022"
-        - name: Position
-          value: "Enhanced Teaching Assistant"
-        - name: Start Date
-          value: "2022-09-01"
-        - name: End Date
-          value: "2022-12-31"
-        - name: URL
-          value: "https://www.cs.columbia.edu/~julia/courses/CS6998-22/syllabus22b.html"
-    - title: "Advanced Topics in Spoken Language Processing (Columbia University, Spring 2022)"
-      type: map
-      contents:
-        - name: Name
-          value: "Advanced Topics in Spoken Language Processing"
-        - name: Summary
-          value: "Columbia University, Spring 2022"
-        - name: Position
-          value: "Enhanced Teaching Assistant"
-        - name: Start Date
-          value: "2022-01-01"
-        - name: End Date
-          value: "2022-05-01"
-        - name: URL
-          value: "https://www.cs.columbia.edu/~julia/courses/CS6998-22/syllabus22.html"
-    - title: "Introduction to Database (Columbia University, Spring 2019)"
-      type: map
-      contents:
-        - name: Name
-          value: "Introduction to Database"
-        - name: Summary
-          value: "Columbia University, Spring 2019"
-        - name: Position
-          value: "Teaching Assistant"
-        - name: Start Date
-          value: "2019-01-01"
-        - name: End Date
-          value: "2019-05-01"
-
-- title: Entrepreneurial Experience
-  type: list
-  contents:
-    - title: "Have You Met (Startup)"
-      type: map
-      contents:
-        - name: Name
-          value: "Have You Met (Startup)"
-        - name: Position
-          value: "Chief AI Lead"
-        - name: URL
-          value: "https://www.haveyoumet.co/"
-        - name: Start Date
-          value: "2023-07-01"
-        - name: End Date
-          value: "present"
-        - name: Summary
-          value: ""
-        - name: Highlights
-          value:
-            - "Leading the AI/ML development for an LLM-powered next-generation dating app, driving innovation and preparing for product launch in October 2024."
-
-- title: Languages
-  type: list
-  contents:
-    - title: "English"
-      type: map
-      contents:
-        - name: Language
-          value: "English"
-        - name: Fluency
-          value: "Bilingual Proficiency"
-        - name: Icon
-          value: ""
-    - title: "Manadarin"
-      type: map
-      contents:
-        - name: Language
-          value: "Manadarin"
-        - name: Fluency
-          value: "Native Speaker"
-        - name: Icon
-          value: ""
-    - title: "Japanese"
-      type: map
-      contents:
-        - name: Language
-          value: "Japanese"
-        - name: Fluency
-          value: "Elementary Proficiency"
-        - name: Icon
-          value: ""
-        - name: PDF
-          value: "Japanese_certificate_Lin.pdf"
-
-- title: Interests
-  type: list
-  contents:
-    - title: "Bartending and Mixology"
-      type: map
-      contents:
-        - name: Name
-          value: "Bartending and Mixology"
-        - name: Icon
-          value: ""
-        - name: PDF
-          value: "CBA_certificate_Lin.pdf"
+    - name: Methods
+      value: "LLM agents, human-agent interaction, telemetry modeling, multimodal learning, graph neural networks, evaluation, user studies"
+    - name: Tools
+      value: "Python, PyTorch, Hugging Face, LangChain/LangGraph, SQL/Kusto, Azure, Git"

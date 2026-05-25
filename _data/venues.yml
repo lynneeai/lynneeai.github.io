@@ -1,51 +1,71 @@
-"EMNLP 2025":
-  url: https://2025.emnlp.org/
-  color: "#e60013"
+"ICML 2026":
+  url: https://icml.cc/Conferences/2026
+  color: "#366bb3"
 
-"COLM 2025":
-  url: https://colmweb.org/
-  color: "#000000"
-
-"Interspeech 2025":
-  url: https://www.interspeech2025.org/home
-  color: "#c5daf8"
+"ACL 2026":
+  url: https://2026.aclweb.org/
+  color: "#4c78a8"
 
 "ACL 2025":
   url: https://2025.aclweb.org/
-  color: "#ff884a"
+  color: "#4c78a8"
 
-"NAACL 2025":
-  url: https://2025.naacl.org/
-  color: "#ddc035"
+"EACL 2026":
+  url: https://2026.eacl.org/
+  color: "#7a5195"
 
-"COLING 2025":
-  url: https://coling2025.org/
-  color: "#00435c"
+"IWSDS 2026":
+  url: https://2026.iwsds.org/
+  color: "#00876c"
+
+"AIA@COLM 2025":
+  url: https://colmweb.org/
+  color: "#4b5563"
+
+"COLM 2025":
+  url: https://colmweb.org/
+  color: "#4b5563"
+
+"EMNLP 2025":
+  url: https://2025.emnlp.org/
+  color: "#c04a2b"
 
 "EMNLP 2024":
   url: https://2024.emnlp.org/
-  color: "#be0d3c"
+  color: "#c04a2b"
+
+"Interspeech 2025":
+  url: https://www.interspeech2025.org/home
+  color: "#2f8f9d"
+
+"NAACL 2025":
+  url: https://2025.naacl.org/
+  color: "#8c6bb1"
+
+"COLING 2025":
+  url: https://coling2025.org/
+  color: "#006d77"
 
 "ICWSM 2024":
   url: https://www.icwsm.org/2024/
-  color: "#5bc5cf"
+  color: "#2a9d8f"
 
 "ICWSM 2023":
   url: https://www.icwsm.org/2023/
-  color: "#5bc5cf"
+  color: "#2a9d8f"
 
 "ICWSM 2021":
   url: https://www.icwsm.org/2021/
-  color: "#5bc5cf"
+  color: "#2a9d8f"
 
 "IC<sup>2</sup>S<sup>2</sup> 2023":
   url: https://ic2s2-2023.org/
-  color: "#8193be"
+  color: "#5e548e"
 
 "IEEE BigData 2021":
   url: https://bigdataieee.org/BigData2021/
-  color: "#1d1c63"
+  color: "#1d3557"
 
 "IEEE MIPR 2019":
   url: https://www.computer.org/csdl/proceedings/mipr/2019/19wB16JGcSY
-  color: "#faa41b"
+  color: "#b5651d"

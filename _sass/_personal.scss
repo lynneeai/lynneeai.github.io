@@ -1,0 +1,413 @@
+/*******************************************************************************
+ * Personal site polish
+ ******************************************************************************/
+
+/* ---------------------------------------------------------------------------
+ * Research constellation
+ * Semantic markup (.research-constellation) is the readable fallback shown on
+ * mobile / no-JS / reduced motion. On wide screens the JS adds `.rc-enhanced`
+ * and injects an interactive `.rc-wrap` node-graph right after it.
+ * Everything is driven by the site's theme variables so it blends in both
+ * light and dark mode.
+ * ------------------------------------------------------------------------- */
+
+.research-constellation {
+  clear: both;
+  margin: 2.35rem 0 2.25rem;
+
+  .rc-hub {
+    margin: 0 auto 1.1rem;
+    max-width: 40rem;
+    text-align: center;
+  }
+
+  .rc-kicker {
+    color: var(--global-theme-color);
+    display: block;
+    font-size: 0.68rem;
+    font-weight: 700;
+    letter-spacing: 0.09em;
+    text-transform: uppercase;
+  }
+
+  .rc-title {
+    display: block;
+    font-size: 1.1rem;
+    font-weight: 700;
+    line-height: 1.25;
+    margin-top: 0.2rem;
+  }
+
+  .rc-sub {
+    color: var(--global-text-color-light);
+    display: block;
+    font-size: 0.82rem;
+    line-height: 1.35;
+    margin-top: 0.15rem;
+  }
+
+  .rc-area {
+    border: 1px solid var(--global-divider-color);
+    border-left: 3px solid var(--rc-ac, var(--global-theme-color));
+    border-radius: 8px;
+    margin-top: 0.7rem;
+    padding: 0.75rem 0.9rem;
+  }
+
+  .rc-area-name {
+    font-size: 0.9rem;
+    font-weight: 700;
+    margin: 0 0 0.55rem;
+  }
+
+  .rc-area a {
+    border: 1px solid color-mix(in srgb, var(--rc-ac, var(--global-theme-color)) 45%, var(--global-divider-color));
+    border-radius: 999px;
+    color: var(--global-text-color);
+    display: inline-block;
+    font-size: 0.8rem;
+    margin: 0 0.32rem 0.32rem 0;
+    padding: 0.32rem 0.62rem;
+    text-decoration: none;
+    transition:
+      background-color 160ms ease,
+      color 160ms ease;
+
+    &:hover,
+    &:focus {
+      background: var(--rc-ac, var(--global-theme-color));
+      color: #fff;
+    }
+  }
+
+  &.rc-enhanced {
+    display: none;
+  }
+}
+
+/* Enhanced interactive stage --------------------------------------------- */
+
+.rc-wrap {
+  clear: both;
+  margin: 2.35rem 0 2.25rem;
+  overflow: visible;
+  position: relative;
+  width: 100%;
+}
+
+.rc-stage {
+  height: 480px;
+  left: 50%;
+  position: absolute;
+  top: 0;
+  transform-origin: top center;
+  width: 880px;
+}
+
+.rc-edges {
+  height: 480px;
+  inset: 0;
+  overflow: visible;
+  pointer-events: none;
+  position: absolute;
+  width: 880px;
+  z-index: 2;
+}
+
+.rc-edge-hub {
+  fill: none;
+  opacity: 0.45;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-width: 1.4;
+  transition:
+    opacity 350ms ease,
+    stroke-width 350ms ease;
+
+  &.rc-on {
+    opacity: 1;
+    stroke-width: 2.4;
+  }
+}
+
+.rc-edge-leaf {
+  fill: none;
+  opacity: 0;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-width: 1.2;
+  transition: opacity 160ms ease;
+
+  &.rc-show {
+    opacity: 0.66;
+  }
+}
+
+.rc-node {
+  position: absolute;
+  transform: translate(-50%, -50%);
+}
+
+.rc-hub-node {
+  background: var(--global-card-bg-color);
+  border: 1px solid color-mix(in srgb, var(--global-theme-color) 38%, var(--global-divider-color));
+  border-radius: 12px;
+  box-shadow: 0 6px 22px color-mix(in srgb, var(--global-theme-color) 14%, transparent);
+  color: var(--global-text-color);
+  padding: 13px 18px;
+  text-align: center;
+  transition: opacity 350ms ease;
+  width: 210px;
+  z-index: 6;
+
+  .rc-k {
+    color: var(--global-theme-color);
+    display: block;
+    font-size: 0.58rem;
+    font-weight: 800;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+  }
+
+  .rc-t {
+    display: block;
+    font-size: 0.9rem;
+    font-weight: 700;
+    line-height: 1.28;
+    margin-top: 5px;
+  }
+}
+
+.rc-glow {
+  animation: rc-glow 4s ease-in-out infinite;
+  background: radial-gradient(
+    circle,
+    color-mix(in srgb, var(--global-theme-color) 20%, transparent),
+    transparent 65%
+  );
+  border-radius: 50%;
+  height: 220px;
+  left: 50%;
+  pointer-events: none;
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 220px;
+  z-index: 1;
+}
+
+@keyframes rc-glow {
+  0%,
+  100% {
+    opacity: 0.45;
+    transform: translate(-50%, -50%) scale(1);
+  }
+  50% {
+    opacity: 0.85;
+    transform: translate(-50%, -50%) scale(1.1);
+  }
+}
+
+.rc-area-node {
+  background: var(--global-card-bg-color);
+  border: 1.5px solid color-mix(in srgb, var(--rc-ac) 55%, var(--global-divider-color));
+  border-radius: 11px;
+  box-shadow: 0 3px 12px color-mix(in srgb, var(--rc-ac) 12%, transparent);
+  color: var(--global-text-color);
+  cursor: pointer;
+  padding: 9px 15px;
+  text-align: center;
+  transition:
+    transform 350ms cubic-bezier(0.34, 1.56, 0.64, 1),
+    box-shadow 350ms ease,
+    opacity 350ms ease,
+    border-color 350ms ease;
+  z-index: 7;
+
+  .rc-an {
+    display: block;
+    font-size: 0.83rem;
+    font-weight: 700;
+    line-height: 1.18;
+  }
+
+  .rc-ac {
+    align-items: center;
+    color: var(--rc-ac);
+    display: inline-flex;
+    font-size: 0.62rem;
+    font-weight: 700;
+    gap: 5px;
+    letter-spacing: 0.03em;
+    margin-top: 3px;
+  }
+
+  .rc-dot {
+    background: var(--rc-ac);
+    border-radius: 50%;
+    height: 5px;
+    width: 5px;
+  }
+
+  &:hover,
+  &.rc-on {
+    /* no scale here: the node must keep its logical size so the SVG edges
+     * stay attached to its border. Emphasis comes from border + shadow. */
+    border-color: var(--rc-ac);
+    border-width: 2px;
+    box-shadow: 0 8px 24px color-mix(in srgb, var(--rc-ac) 34%, transparent);
+  }
+
+  &:focus-visible {
+    outline: 2px solid var(--rc-ac);
+    outline-offset: 2px;
+  }
+}
+
+.rc-leaf {
+  background: var(--global-card-bg-color);
+  border: 1px solid color-mix(in srgb, var(--rc-ac) 50%, var(--global-divider-color));
+  border-radius: 999px;
+  box-shadow: 0 3px 10px color-mix(in srgb, var(--rc-ac) 12%, transparent);
+  color: var(--global-text-color);
+  font-size: 0.74rem;
+  line-height: 1.15;
+  opacity: 0;
+  padding: 6px 12px;
+  pointer-events: none;
+  position: absolute;
+  text-decoration: none;
+  transform: translate(calc(-50% + var(--rc-cx)), calc(-50% + var(--rc-cy))) scale(0.5);
+  transition:
+    opacity 160ms ease,
+    transform 240ms cubic-bezier(0.34, 1.4, 0.64, 1),
+    background-color 180ms ease,
+    color 180ms ease,
+    border-color 180ms ease;
+  white-space: nowrap;
+  z-index: 6;
+
+  &:hover,
+  &:focus {
+    background: var(--rc-ac);
+    border-color: var(--rc-ac);
+    color: #fff;
+    outline: none;
+  }
+
+  &.rc-show {
+    opacity: 1;
+    pointer-events: auto;
+    transform: translate(-50%, -50%) scale(1);
+  }
+}
+
+/* Draggable nodes. (Gentle float is driven in JS so edges follow the nodes.) */
+.rc-hub-node,
+.rc-area-node {
+  cursor: grab;
+  touch-action: none;
+  user-select: none;
+
+  &.rc-dragging {
+    cursor: grabbing;
+    transition: none;
+  }
+}
+
+.rc-stage.rc-has-active {
+  /* De-emphasize inactive nodes without transparency so the graph retains a
+   * clear spatial hierarchy while the active branch opens. */
+  .rc-area-node:not(.rc-on) {
+    border-color: var(--global-divider-color);
+    box-shadow: none;
+
+    .rc-an { color: var(--global-text-color-light); }
+    .rc-ac { opacity: 0.55; }
+  }
+  .rc-edge-hub:not(.rc-on) { opacity: 0.12; }
+}
+
+/* ---------------------------------------------------------------------------
+ * Publications list hover polish
+ * ------------------------------------------------------------------------- */
+
+.publications ol.bibliography {
+  li {
+    border-left: 3px solid transparent;
+    border-radius: 8px;
+    padding: 0.45rem 0.55rem 0.45rem 0.7rem;
+    scroll-margin-top: 80px;
+    transition:
+      background-color 160ms ease,
+      border-color 160ms ease,
+      transform 160ms ease;
+
+    &:hover {
+      background: rgba(38, 152, 186, 0.055);
+      border-left-color: var(--global-theme-color);
+      transform: translateX(2px);
+    }
+
+    .preview {
+      transition:
+        box-shadow 180ms ease,
+        transform 180ms ease;
+    }
+
+    &:hover .preview {
+      box-shadow: 0 9px 22px rgba(0, 0, 0, 0.14);
+      transform: scale(1.025);
+    }
+
+    .abbr abbr {
+      transition:
+        filter 160ms ease,
+        transform 160ms ease;
+    }
+
+    &:hover .abbr abbr {
+      filter: saturate(1.08) brightness(1.04);
+      transform: translateY(-1px);
+    }
+
+    .links a.btn {
+      transition:
+        background-color 160ms ease,
+        border-color 160ms ease,
+        color 160ms ease,
+        transform 160ms ease;
+
+      &:hover {
+        transform: translateY(-1px);
+      }
+    }
+  }
+}
+
+/* While arriving at /publications/#citekey, keep the list hidden until bibsearch
+ * has filtered it — avoids a flash of the full (irrelevant) list. Revealed by
+ * bibsearch.js, with a safety timeout in head.liquid. */
+html.bibsearch-pending .bibliography {
+  visibility: hidden;
+}
+
+/* ---------------------------------------------------------------------------
+ * Dark mode tweaks
+ * ------------------------------------------------------------------------- */
+
+html[data-theme="dark"] {
+  .publications ol.bibliography li:hover {
+    background: rgba(38, 152, 186, 0.12);
+  }
+}
+
+/* ---------------------------------------------------------------------------
+ * Reduced motion: stop ambient animation; keep hover/focus reveals usable.
+ * ------------------------------------------------------------------------- */
+
+@media (prefers-reduced-motion: reduce) {
+  .rc-glow {
+    animation: none;
+  }
+}

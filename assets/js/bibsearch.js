@@ -54,6 +54,8 @@ document.addEventListener("DOMContentLoaded", function () {
     const hashValue = decodeURIComponent(window.location.hash.substring(1)); // Remove the '#' character
     document.getElementById("bibsearch").value = hashValue;
     filterItems(hashValue);
+    // reveal the (now filtered) list — see the bibsearch-pending guard in head.liquid
+    document.documentElement.classList.remove("bibsearch-pending");
   };
 
   // Sensitive search. Only start searching if there's been no input for 300 ms

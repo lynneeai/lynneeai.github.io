@@ -642,9 +642,7 @@ jekyll_get_json:
 jsonresume:
   - basics
   - education
+  - interests
   - professional experience
   - research experience
-  - teaching
-  - entrepreneurial experience
-  - languages
-  - interests
+  - skills

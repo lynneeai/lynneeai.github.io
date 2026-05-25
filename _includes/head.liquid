@@ -69,6 +69,19 @@
 <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url | bust_css_cache }}">
 <link rel="canonical" href="{{ page.url | replace:'index.html','' | absolute_url }}">
 
+<!-- Hide the bibliography until bibsearch applies the #hash filter, so arriving at -->
+<!-- /publications/#citekey lands on that paper without flashing the full list first. -->
+<script>
+  (function () {
+    if (window.location.hash && window.location.hash.length > 1) {
+      var d = document.documentElement;
+      d.classList.add("bibsearch-pending");
+      // safety net: always reveal even if bibsearch never runs (no-JS arrivals never add the class)
+      setTimeout(function () { d.classList.remove("bibsearch-pending"); }, 1200);
+    }
+  })();
+</script>
+
 <!-- Dark Mode -->
 <script src="{{ '/assets/js/theme.js' | relative_url | bust_file_cache }}"></script>
 {% if site.enable_darkmode %}
