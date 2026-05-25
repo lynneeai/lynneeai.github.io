@@ -149,6 +149,7 @@
         requestAnimationFrame(function () {
           requestAnimationFrame(function () {
             if (stage) stage.classList.remove("rc-booting");
+            if (wrap) wrap.classList.add("rc-ready");
             startDemo();
             startFloat();
           });

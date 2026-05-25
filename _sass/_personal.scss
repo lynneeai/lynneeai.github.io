@@ -98,9 +98,11 @@
 .rc-stage {
   height: 480px;
   left: 50%;
+  opacity: 1;
   position: absolute;
   top: 0;
   transform-origin: top center;
+  transition: opacity 180ms ease;
   width: 880px;
 }
 
@@ -145,6 +147,10 @@
 }
 
 .rc-stage.rc-booting {
+  opacity: 0;
+  pointer-events: none;
+  transition: none;
+
   .rc-edge-hub,
   .rc-edge-leaf {
     opacity: 0 !important;

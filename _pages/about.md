@@ -31,6 +31,39 @@ I received my Ph.D. in Computer Science from [SpeechLab](https://www.cs.columbia
 
 Broadly, I build trustworthy, context-aware human-agent systems, grounded in NLP, LLM safety, information disorder, and responsible AI.
 
+<style>
+  @media (min-width: 768px) {
+    .research-constellation {
+      min-height: 480px;
+      overflow: hidden;
+      visibility: hidden;
+    }
+
+    .research-constellation.rc-enhanced {
+      display: none;
+    }
+
+    .rc-wrap {
+      visibility: hidden;
+    }
+
+    .rc-wrap.rc-ready {
+      visibility: visible;
+    }
+  }
+</style>
+<noscript>
+  <style>
+    @media (min-width: 768px) {
+      .research-constellation {
+        min-height: 0;
+        overflow: visible;
+        visibility: visible;
+      }
+    }
+  </style>
+</noscript>
+
 <div class="research-constellation" aria-label="Research map">
   <div class="rc-hub">
     <span class="rc-kicker">research map</span>
