@@ -48,7 +48,7 @@
       if (built) return;
       built = true;
       wrap = document.createElement("div"); wrap.className = "rc-wrap";
-      stage = document.createElement("div"); stage.className = "rc-stage"; wrap.appendChild(stage);
+      stage = document.createElement("div"); stage.className = "rc-stage rc-booting"; wrap.appendChild(stage);
       edges = document.createElementNS(NS, "svg");
       edges.setAttribute("class", "rc-edges"); edges.setAttribute("viewBox", "0 0 " + W + " " + H);
       stage.appendChild(edges);
@@ -134,8 +134,7 @@
 
       fit();
       activate("0"); di = 0;
-      startDemo();
-      startFloat();
+      scheduleReveal();
     }
 
     /* gentle float, driven in JS so the edges follow the nodes (the active /
@@ -144,6 +143,19 @@
       if (reduce || rafId) return;
       floatT0 = performance.now();
       rafId = requestAnimationFrame(floatTick);
+    }
+    function scheduleReveal() {
+      function reveal() {
+        requestAnimationFrame(function () {
+          requestAnimationFrame(function () {
+            if (stage) stage.classList.remove("rc-booting");
+            startDemo();
+            startFloat();
+          });
+        });
+      }
+      if (document.readyState === "complete") setTimeout(reveal, 180);
+      else window.addEventListener("load", function () { setTimeout(reveal, 180); }, { once: true });
     }
     function floatTick(now) {
       if (!stage) { rafId = null; return; }
@@ -183,14 +195,13 @@
     }
     // Smooth connector between actual node borders. The extra curvature keeps
     // the graph from reading as a rigid diagram while still preserving direction.
-    function flowPath(sx, sy, ex, ey, bend, arch) {
+    function flowPath(sx, sy, ex, ey, bend) {
       var dx = ex - sx, dy = ey - sy;
       var curve = bend == null ? 0.36 : bend;
-      var lift = Math.max(-34, Math.min(34, dy * 0.18));
-      var a = arch || 0;
+      var c = Math.max(54, Math.abs(dx) * curve);
       return "M" + sx + " " + sy +
-        " C" + (sx + dx * curve) + " " + (sy - lift + a) +
-        " " + (ex - dx * curve) + " " + (ey + lift + a) +
+        " C" + (sx + c) + " " + sy +
+        " " + (ex - c) + " " + ey +
         " " + ex + " " + ey;
     }
     function clientToSvg(x, y) {
@@ -208,13 +219,12 @@
     function drawHubEdge(a) {
       var s = centerPoint(hub.el);
       var e = centerPoint(a.el);
-      var arch = (a.idx - 1.5) * 10;
-      a.hubPath.setAttribute("d", flowPath(s[0], s[1], e[0], e[1], 0.42, arch));
+      a.hubPath.setAttribute("d", flowPath(s[0], s[1], e[0], e[1], 0.42));
     }
     function drawLeafEdge(a, lf) {
       var s = centerPoint(a.el);
       var e = centerPoint(lf.el);
-      lf.path.setAttribute("d", flowPath(s[0], s[1], e[0], e[1], 0.5, lf.arc));
+      lf.path.setAttribute("d", flowPath(s[0], s[1], e[0], e[1], 0.5));
     }
 
     /* ---- activation ---- */
